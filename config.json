@@ -8,7 +8,7 @@
 "plugins" : ["notifications", "messages", "events", "contents", "participants", "addcontact", "sendmessage", "forum", "label", "url", "page", "resource", "CEMAD"],
 "wsservice" : "moodle_mobile_app",
 "wsextservice" : "local_mobile",
-"presets" : {"url": "http://campuscemad.com.ar", "username": ""},
+"presets" : {"url": "http://campuscemad.com.ar/login/index.php", "username": ""},
 "sync_ws_on" : true,
 "sync_css_on" : true,
 "sync_cron": 300000,
