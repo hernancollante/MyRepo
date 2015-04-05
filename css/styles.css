@@ -423,7 +423,7 @@ hr {
 }
 #add-site input[type="button"]:hover,
 #add-site input[type="button"]:focus {
-  background-image: none;
+  background-image: url(../plugins/logo.png);
 }
 #add-site #login-details {
   padding-top: 40px;
