@@ -354,6 +354,8 @@ hr {
 #add-site,
 #manage-accounts {
   padding-top: 3rem;
+  background-color: #FF7A05;
+
 }
 #add-site h1 img,
 #manage-accounts h1 img {
