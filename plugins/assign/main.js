@@ -250,12 +250,6 @@ define(templates, function (assignTpl, submissionsTpl) {
                 submission.plugins.forEach(function(plugin) {
                     if (plugin.type == 'onlinetext' && plugin.editorfields) {
                         text = plugin.editorfields[0].text;
-
-                        if (plugin.fileareas && plugin.fileareas[0] && plugin.fileareas[0].files && plugin.fileareas[0].files[0]) {
-                            var fileURL =  plugin.fileareas[0].files[0].fileurl;
-                            fileURL = fileURL.substr(0, fileURL.lastIndexOf('/')).replace('pluginfile.php/', 'pluginfile.php?token='+MM.config.current_token+'&file=/');
-                            text = text.replace(/@@PLUGINFILE@@/g, fileURL);
-                        }
                     }
                 });
             }
@@ -273,7 +267,8 @@ define(templates, function (assignTpl, submissionsTpl) {
             }
             // Find local path of files.
             if (files.length > 0) {
-                    for (var el in files) {
+                console.log(files);
+                for (var el in files) {
                     var file = files[el];
 
                     files[el].id = submission.id + el;
